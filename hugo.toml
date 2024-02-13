@@ -1,0 +1,42 @@
+baseURL = 'https://hddlab.de/'
+languageCode = 'de-de'
+title = 'HDD Lab'
+
+# Do not change!
+disableKinds = ["taxonomy", "term"]
+
+[params]
+subTitle = 'HDD Lab | Datenrettung'
+
+copyright = "© 2021 - 2024 HDD Lab GmbH, alle Rechte vorbehalten"
+
+
+[menus]
+[[menus.main]]
+    name = "Datenrettung"
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = "Datenvernichtung"
+    pageRef = '/'
+    weight = 20
+[[menus.main]]
+    name = "Technologien"
+    pageRef = '/'
+    weight = 30
+[[menus.main]]
+    name = "Preise"
+    pageRef = '/'
+    weight = 40
+[[menus.main]]
+    name = "Kontakt"
+    pageRef = '/'
+    weight = 50
+[[menus.legal]]
+    name = "Impressum"
+    pageRef = '/'
+    weight = 10
+[[menus.legal]]
+    name = "Datenschutzhinweise"
+    pageRef = '/'
+    weight = 20

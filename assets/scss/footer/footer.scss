@@ -1,0 +1,10 @@
+.footer {
+
+    --footer-gap: clamp(var(--main-gap),
+                calc(var(--main-gap) + 2vw),
+                calc(var(--main-gap) * 4));
+
+    margin-block-start: var(--footer-gap);
+    padding-block: var(--footer-gap);
+    background-color: var(--mid-bg);
+}

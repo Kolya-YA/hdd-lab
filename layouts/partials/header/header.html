@@ -1,0 +1,16 @@
+<header class="header">
+    <h1 class="header__logo">{{ site.Title }}</h1>
+    <div class="header__content">
+        <h2 class="header__title">{{ or .Params.PageTitle site.Params.SubTitle }}</h2>
+        <search>
+            <form action="">
+                <label>
+                    Find
+                    <input type="search" name="mfind">
+                </label>
+                <button type="submit">Search</button>
+            </form>
+        </search>
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+</header>
