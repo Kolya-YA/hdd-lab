@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "home/hero" . }}
 <div class="main-content content-grid">
     {{ .Content }}
     {{ range site.RegularPages }}
@@ -7,40 +8,22 @@
 </div>
 {{ end }}
 
-<section class="services content-grid">
-    <div class="home-services">
-    
-        <div class="service">
-            <img src="https://assets.codepen.io/308367/betteroutreach-logo.avif" alt="" class="logo">
-            <div class="product__info">
-                <h2 class="fw-bold">Datenrettung von</h2>
-                <p>RAID<br>
-                Server<br>
-                SAN - NAS<br>
-                Virtuelle Systeme</p>
-            </div>
-        </div>
-    
-        <div class="service">
-            <img src="https://assets.codepen.io/308367/sliderule-logo.avif" alt="" class="logo">
-            <div class="product__info">
-                <h2 class="fw-bold">Unsere Services</h2>
-                <p>Datenrettung<br>
-                Tape-Services<br>
-                Datenlöschung<br>
-                Datenmanagement</p>
-            </div>
-        </div>
-    
-        <div class="service">
-            <img src="https://assets.codepen.io/308367/kmenu.avif" alt="" class="logo">
-            <div class="product__info">
-                <h2 class="fw-bold">Softwareprodukte</h2>
-                <p>DIY-Datenrettung<br>
-                E-Mail Restore<br>
-                Datenlöschung</p>
-            </div>
-        </div>
-    </div>
+{{ partial "home/services" . }}
+
+<section class="home-info">
+    <h2>Information</h2>
+    <h3>Western Digital FW Bug Datenrettung</h3>
+    <p>Ausfälle diverser Western Digital Festplatten.</p>
+    <h3>Samsung SSD Datenrettung</h3>
+    <p>Ausfälle diverser samsung SSD.</p>
+    <h3>Datenrettung Seagate</h3>
+    <p>Massenausfall von Seagate Barracuda 7200.11 Festplatten</p>
+    <h3>Festplatten Datenbank</h3>
+    <p>IDE, SCSI und S-ATA Festplatten. Allgemeine Information.</p>
+    <h3>Datenrettung USB-Stick</h3>
+    <p>Datenrettung von USB-Sticks mit Flash Speicher.</p>
 </section>
+
+{{ partial "home/prices" . }}
+
 {{ end }}

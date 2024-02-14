@@ -1,0 +1,43 @@
+.prices {
+    margin-block: 2rem;
+    padding-block: var(--main-gap);
+    background: linear-gradient(var(--button-bg), var(--brand-bg));
+    
+    h2 {
+        text-align: center;
+        margin-block-end: .8em;
+        color: white;
+    }
+}
+
+.home-prices {
+    display: grid;
+    gap: 1rem;
+
+    --product-min-size: 220px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--product-min-size), 1fr));
+    
+    .p-card {
+        background-color: var(--button-bg);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0.5rem 0.5rem 1rem rgb(0 0 0 / 0.15);
+        // display: grid;
+        // grid-template-columns: auto 1fr;
+        // gap: 1rem;
+        color: white;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__price {
+            margin-block: var(--main-gap);
+            color: gold;
+            font-weight: 600;
+            text-align: center;
+            border-top: 1px solid currentColor;
+            border-bottom: 1px solid currentColor;
+        }
+    }
+}
