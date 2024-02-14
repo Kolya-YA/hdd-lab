@@ -10,6 +10,21 @@ subTitle = 'HDD Lab | Datenrettung'
 
 copyright = "© 2021 - 2024 HDD Lab GmbH, alle Rechte vorbehalten"
 
+# Used in the footer
+
+# Used in the footer
+    phones = [
+        "030 222 333 222",
+        "030 333 222 333",
+    ]
+
+address = [
+    "*HDD Lab*",
+    "Hauptstrsse, 101",
+    "12345 Berlin",
+    #"*Parkplätze stehen vor dem Haus zur Verfügung*"
+]
+
 
 [menus]
 [[menus.main]]
@@ -32,6 +47,24 @@ copyright = "© 2021 - 2024 HDD Lab GmbH, alle Rechte vorbehalten"
     name = "Kontakt"
     pageRef = '/'
     weight = 50
+
+[[menus.service]]
+    name = "First item"
+    pageRef = '/'
+    weight = 10
+[[menus.service]]
+    name = "Second item"
+    pageRef = '/'
+    weight = 10
+[[menus.service]]
+    name = "Third item"
+    pageRef = '/'
+    weight = 10
+[[menus.service]]
+    name = "Fourth item"
+    pageRef = '/'
+    weight = 10
+
 [[menus.legal]]
     name = "Impressum"
     pageRef = '/'

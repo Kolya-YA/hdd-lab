@@ -1,16 +1,17 @@
-<header class="header">
-    <h1 class="header__logo">{{ site.Title }}</h1>
-    <div class="header__content">
-        <h2 class="header__title">{{ or .Params.PageTitle site.Params.SubTitle }}</h2>
-        <search>
-            <form action="">
-                <label>
-                    Find
-                    <input type="search" name="mfind">
-                </label>
-                <button type="submit">Search</button>
-            </form>
-        </search>
-        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header class="header content-grid">
+    <div class="header__inner breakout">
+        <img class="header__logo" src="" alt="hdd logo" aria-hidden="true">
+        <div class="header__content">
+            <div class="header__top">
+                <h1 class="header__title"><span>{{ site.Title }} </span>{{ or .Params.PageTitle site.Params.SubTitle }}</h1>
+                <search class="header__search">
+                    <form action="">
+                        <input type="search" name="mfind">
+                        <button type="submit" aria-label="Search">🔍</button>
+                    </form>
+                </search>
+            </div>
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
     </div>
 </header>

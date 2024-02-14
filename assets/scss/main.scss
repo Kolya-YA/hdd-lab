@@ -1,6 +1,7 @@
 // @use "common/fonts";
 @use "common/custom-props";
 @use "common/colors";
+@use "common/utility";
 @use "common/setup";
 // @use "common/typo";
 // @use "common/sc-details";
@@ -13,7 +14,10 @@
 // @use "common/sdialog";
 // @use "common/link-btn";
 
-// @use "header";
+@use "header/header";
+@use "header/header-nav";
+
+@use "common/home-card";
 
 // @use "homepage/hero";
 // @use "homepage/content";
@@ -25,4 +29,4 @@
 
 @use "footer/footer";
 // @use "footer/footer-nav";
-// @use "footer/footer-legal";
+@use "footer/footer-legal";

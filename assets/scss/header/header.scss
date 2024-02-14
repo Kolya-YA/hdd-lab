@@ -1,0 +1,39 @@
+.header {
+    padding-block: var(--main-gap);
+    margin-block-end: var(--main-gap);
+    background: gold;
+    background: linear-gradient(
+        var(--main-bg) 20%,
+        var(--button-bg) 20%,
+        var(--button-bg) 60%,
+        var(--main-bg) 60%
+    );
+
+    &__inner {
+        display: flex;
+        gap: var(--main-gap);
+    }
+
+    &__logo {
+        background: rgba(188, 143, 143, 0.264);
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__top {
+        display: flex;
+        gap: var(--main-gap);
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-block: var(--main-gap);
+        color: var(--main-bg)
+    }
+
+    &__search {
+        align-self: center;
+    }
+}

@@ -1,5 +1,4 @@
 .footer {
-
     --footer-gap: clamp(var(--main-gap),
                 calc(var(--main-gap) + 2vw),
                 calc(var(--main-gap) * 4));
@@ -7,4 +6,25 @@
     margin-block-start: var(--footer-gap);
     padding-block: var(--footer-gap);
     background-color: var(--mid-bg);
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        nav >ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+        
+                a {
+                    display: block;
+                    padding-block: .3em;
+                    padding-inline: .3em;
+                    font-size: var(--fs-400);
+                    line-height: 1;
+                    text-decoration: none;
+                    color: var(--brand-bg);
+                }
+            }
+    }
 }

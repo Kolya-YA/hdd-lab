@@ -1,7 +1,46 @@
 {{ define "main" }}
-{{ .Content }}
-{{ range site.RegularPages }}
-<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }}
+<div class="main-content content-grid">
+    {{ .Content }}
+    {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+</div>
 {{ end }}
+
+<section class="services content-grid">
+    <div class="home-services">
+    
+        <div class="service">
+            <img src="https://assets.codepen.io/308367/betteroutreach-logo.avif" alt="" class="logo">
+            <div class="product__info">
+                <h2 class="fw-bold">Datenrettung von</h2>
+                <p>RAID<br>
+                Server<br>
+                SAN - NAS<br>
+                Virtuelle Systeme</p>
+            </div>
+        </div>
+    
+        <div class="service">
+            <img src="https://assets.codepen.io/308367/sliderule-logo.avif" alt="" class="logo">
+            <div class="product__info">
+                <h2 class="fw-bold">Unsere Services</h2>
+                <p>Datenrettung<br>
+                Tape-Services<br>
+                Datenlöschung<br>
+                Datenmanagement</p>
+            </div>
+        </div>
+    
+        <div class="service">
+            <img src="https://assets.codepen.io/308367/kmenu.avif" alt="" class="logo">
+            <div class="product__info">
+                <h2 class="fw-bold">Softwareprodukte</h2>
+                <p>DIY-Datenrettung<br>
+                E-Mail Restore<br>
+                Datenlöschung</p>
+            </div>
+        </div>
+    </div>
+</section>
 {{ end }}

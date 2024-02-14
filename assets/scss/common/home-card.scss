@@ -1,0 +1,18 @@
+.home-services {
+    display: grid;
+    gap: 1rem;
+
+    --product-min-size: 260px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--product-min-size), 1fr));
+    
+    .service {
+        background-color: var(--button-bg);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0.5rem 0.5rem 1rem rgb(0 0 0 / 0.15);
+        // display: grid;
+        // grid-template-columns: auto 1fr;
+        // gap: 1rem;
+        color: white;
+    }
+}
